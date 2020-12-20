@@ -22,9 +22,32 @@ Partial Class MatrizPeso
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.dgv = New System.Windows.Forms.DataGridView()
+        CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'dgv
+        '
+        Me.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgv.Location = New System.Drawing.Point(286, 135)
+        Me.dgv.Name = "dgv"
+        Me.dgv.RowHeadersWidth = 51
+        Me.dgv.RowTemplate.Height = 24
+        Me.dgv.Size = New System.Drawing.Size(240, 150)
+        Me.dgv.TabIndex = 0
+        '
+        'MatrizPeso
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.dgv)
+        Me.Name = "MatrizPeso"
         Me.Text = "MatrizPeso"
+        CType(Me.dgv, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+
     End Sub
+
+    Friend WithEvents dgv As DataGridView
 End Class
