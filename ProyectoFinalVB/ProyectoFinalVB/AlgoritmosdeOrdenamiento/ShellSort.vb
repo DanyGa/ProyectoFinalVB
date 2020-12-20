@@ -19,7 +19,7 @@ Public Class ShellSort
         Dim aux As Integer
         Dim comparaciones As Integer = 0
         Dim intercambios As Integer = 0
-        Dim j = vector.Length / 2
+        Dim j As Integer = vector.Length / 2
         Dim x As Integer
 
         While j > 0
@@ -27,12 +27,12 @@ Public Class ShellSort
             While x <> 0
                 x = 0
                 i = 1
-                While i <= vector.Length - j
+                While i <= (vector.Length - j)
                     comparaciones += 1
 
-                    If vector(i - 1) > vector(i - 1 + j) Then
-                        aux = vector(i - 1 + j)
-                        vector(i - 1 + j) = vector(i - 1)
+                    If vector(i - 1) > vector((i - 1) + j) Then
+                        aux = vector((i - 1) + j)
+                        vector((i - 1) + j) = vector(i - 1)
                         vector(i - 1) = aux
                         x = 1
                         intercambios += 1
