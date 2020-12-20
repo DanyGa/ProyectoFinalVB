@@ -22,7 +22,6 @@ Partial Class MenuAlgoritmos
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuAlgoritmos))
         Me.lblIns = New System.Windows.Forms.Label()
         Me.lblTitulo = New System.Windows.Forms.Label()
         Me.btnBubble = New System.Windows.Forms.Button()
@@ -133,7 +132,7 @@ Partial Class MenuAlgoritmos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImage = Global.ProyectoFinalVB.My.Resources.Resources.MenuAlgoritmos
         Me.ClientSize = New System.Drawing.Size(784, 404)
         Me.Controls.Add(Me.btnShell)
         Me.Controls.Add(Me.btnRadix)

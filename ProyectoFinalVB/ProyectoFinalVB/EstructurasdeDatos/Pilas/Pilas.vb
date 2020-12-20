@@ -81,7 +81,9 @@ Public Class Pilas
     End Sub
 
     Private Sub btnMenu_Click(sender As Object, e As EventArgs) Handles btnMenu.Click
-
+        Dim annyeonghaseyo As New MenuPrincipal()
+        annyeonghaseyo.Show()
+        Hide()
     End Sub
 
     Private Sub Pilas_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
