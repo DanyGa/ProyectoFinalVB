@@ -39,6 +39,8 @@ Partial Class ShellSort
         Me.txtNum = New System.Windows.Forms.TextBox()
         Me.txtMin = New System.Windows.Forms.TextBox()
         Me.txtMax = New System.Windows.Forms.TextBox()
+        Me.lblComparaciones = New System.Windows.Forms.Label()
+        Me.lblCom = New System.Windows.Forms.Label()
         Me.gbTiempo.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -93,6 +95,8 @@ Partial Class ShellSort
         'gbTiempo
         '
         Me.gbTiempo.BackColor = System.Drawing.Color.Snow
+        Me.gbTiempo.Controls.Add(Me.lblCom)
+        Me.gbTiempo.Controls.Add(Me.lblComparaciones)
         Me.gbTiempo.Controls.Add(Me.lblIntercambios)
         Me.gbTiempo.Controls.Add(Me.lblInt)
         Me.gbTiempo.Controls.Add(Me.lblOrdenar)
@@ -108,7 +112,7 @@ Partial Class ShellSort
         'lblIntercambios
         '
         Me.lblIntercambios.AutoSize = True
-        Me.lblIntercambios.Location = New System.Drawing.Point(200, 39)
+        Me.lblIntercambios.Location = New System.Drawing.Point(161, 18)
         Me.lblIntercambios.Name = "lblIntercambios"
         Me.lblIntercambios.Size = New System.Drawing.Size(22, 22)
         Me.lblIntercambios.TabIndex = 3
@@ -117,7 +121,7 @@ Partial Class ShellSort
         'lblInt
         '
         Me.lblInt.AutoSize = True
-        Me.lblInt.Location = New System.Drawing.Point(40, 39)
+        Me.lblInt.Location = New System.Drawing.Point(14, 18)
         Me.lblInt.Name = "lblInt"
         Me.lblInt.Size = New System.Drawing.Size(133, 22)
         Me.lblInt.TabIndex = 2
@@ -126,7 +130,7 @@ Partial Class ShellSort
         'lblOrdenar
         '
         Me.lblOrdenar.AutoSize = True
-        Me.lblOrdenar.Location = New System.Drawing.Point(157, 88)
+        Me.lblOrdenar.Location = New System.Drawing.Point(129, 110)
         Me.lblOrdenar.Name = "lblOrdenar"
         Me.lblOrdenar.Size = New System.Drawing.Size(40, 22)
         Me.lblOrdenar.TabIndex = 1
@@ -135,7 +139,7 @@ Partial Class ShellSort
         'lblOrd
         '
         Me.lblOrd.AutoSize = True
-        Me.lblOrd.Location = New System.Drawing.Point(39, 88)
+        Me.lblOrd.Location = New System.Drawing.Point(14, 110)
         Me.lblOrd.Name = "lblOrd"
         Me.lblOrd.Size = New System.Drawing.Size(90, 22)
         Me.lblOrd.TabIndex = 0
@@ -232,6 +236,24 @@ Partial Class ShellSort
         Me.txtMax.Size = New System.Drawing.Size(116, 26)
         Me.txtMax.TabIndex = 11
         '
+        'lblComparaciones
+        '
+        Me.lblComparaciones.AutoSize = True
+        Me.lblComparaciones.Location = New System.Drawing.Point(188, 64)
+        Me.lblComparaciones.Name = "lblComparaciones"
+        Me.lblComparaciones.Size = New System.Drawing.Size(22, 22)
+        Me.lblComparaciones.TabIndex = 4
+        Me.lblComparaciones.Text = "0"
+        '
+        'lblCom
+        '
+        Me.lblCom.AutoSize = True
+        Me.lblCom.Location = New System.Drawing.Point(14, 64)
+        Me.lblCom.Name = "lblCom"
+        Me.lblCom.Size = New System.Drawing.Size(155, 22)
+        Me.lblCom.TabIndex = 5
+        Me.lblCom.Text = "Comparaciones:"
+        '
         'ShellSort
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -278,4 +300,6 @@ Partial Class ShellSort
     Friend WithEvents txtMax As TextBox
     Friend WithEvents lblIntercambios As Label
     Friend WithEvents lblInt As Label
+    Friend WithEvents lblCom As Label
+    Friend WithEvents lblComparaciones As Label
 End Class
