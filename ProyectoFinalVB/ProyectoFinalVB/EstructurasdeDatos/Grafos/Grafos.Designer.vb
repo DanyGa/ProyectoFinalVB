@@ -25,24 +25,24 @@ Partial Class Grafos
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ArchivoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NodoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AristaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MatrizToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NuevoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Grafo1ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BorrarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Grafo1ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NodoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AgregarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Grafo1ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MoverTodoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MoverNodoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EliminarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AristaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DirigidaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NoDirigidaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EliminarToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MatrizToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AdyacenciaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PesoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Grafo1ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PesoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Grafo1ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
@@ -76,28 +76,6 @@ Partial Class Grafos
         Me.ArchivoToolStripMenuItem.Size = New System.Drawing.Size(91, 26)
         Me.ArchivoToolStripMenuItem.Text = "Archivo"
         '
-        'NodoToolStripMenuItem
-        '
-        Me.NodoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem, Me.MoverTodoToolStripMenuItem, Me.MoverNodoToolStripMenuItem, Me.EliminarToolStripMenuItem})
-        Me.NodoToolStripMenuItem.Name = "NodoToolStripMenuItem"
-        Me.NodoToolStripMenuItem.Size = New System.Drawing.Size(69, 26)
-        Me.NodoToolStripMenuItem.Text = "Nodo"
-        '
-        'AristaToolStripMenuItem
-        '
-        Me.AristaToolStripMenuItem.BackColor = System.Drawing.Color.Snow
-        Me.AristaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DirigidaToolStripMenuItem, Me.NoDirigidaToolStripMenuItem, Me.EliminarToolStripMenuItem1})
-        Me.AristaToolStripMenuItem.Name = "AristaToolStripMenuItem"
-        Me.AristaToolStripMenuItem.Size = New System.Drawing.Size(77, 26)
-        Me.AristaToolStripMenuItem.Text = "Arista"
-        '
-        'MatrizToolStripMenuItem
-        '
-        Me.MatrizToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AdyacenciaToolStripMenuItem, Me.PesoToolStripMenuItem})
-        Me.MatrizToolStripMenuItem.Name = "MatrizToolStripMenuItem"
-        Me.MatrizToolStripMenuItem.Size = New System.Drawing.Size(80, 26)
-        Me.MatrizToolStripMenuItem.Text = "Matriz"
-        '
         'NuevoToolStripMenuItem
         '
         Me.NuevoToolStripMenuItem.BackColor = System.Drawing.Color.Snow
@@ -127,6 +105,13 @@ Partial Class Grafos
         Me.Grafo1ToolStripMenuItem1.Name = "Grafo1ToolStripMenuItem1"
         Me.Grafo1ToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
         Me.Grafo1ToolStripMenuItem1.Text = "Grafo 1"
+        '
+        'NodoToolStripMenuItem
+        '
+        Me.NodoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AgregarToolStripMenuItem, Me.MoverTodoToolStripMenuItem, Me.MoverNodoToolStripMenuItem, Me.EliminarToolStripMenuItem})
+        Me.NodoToolStripMenuItem.Name = "NodoToolStripMenuItem"
+        Me.NodoToolStripMenuItem.Size = New System.Drawing.Size(69, 26)
+        Me.NodoToolStripMenuItem.Text = "Nodo"
         '
         'AgregarToolStripMenuItem
         '
@@ -164,6 +149,14 @@ Partial Class Grafos
         Me.EliminarToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.EliminarToolStripMenuItem.Text = "Eliminar"
         '
+        'AristaToolStripMenuItem
+        '
+        Me.AristaToolStripMenuItem.BackColor = System.Drawing.Color.Snow
+        Me.AristaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DirigidaToolStripMenuItem, Me.NoDirigidaToolStripMenuItem, Me.EliminarToolStripMenuItem1})
+        Me.AristaToolStripMenuItem.Name = "AristaToolStripMenuItem"
+        Me.AristaToolStripMenuItem.Size = New System.Drawing.Size(77, 26)
+        Me.AristaToolStripMenuItem.Text = "Arista"
+        '
         'DirigidaToolStripMenuItem
         '
         Me.DirigidaToolStripMenuItem.BackColor = System.Drawing.Color.Snow
@@ -185,6 +178,13 @@ Partial Class Grafos
         Me.EliminarToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
         Me.EliminarToolStripMenuItem1.Text = "Eliminar"
         '
+        'MatrizToolStripMenuItem
+        '
+        Me.MatrizToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AdyacenciaToolStripMenuItem, Me.PesoToolStripMenuItem})
+        Me.MatrizToolStripMenuItem.Name = "MatrizToolStripMenuItem"
+        Me.MatrizToolStripMenuItem.Size = New System.Drawing.Size(80, 26)
+        Me.MatrizToolStripMenuItem.Text = "Matriz"
+        '
         'AdyacenciaToolStripMenuItem
         '
         Me.AdyacenciaToolStripMenuItem.BackColor = System.Drawing.Color.Snow
@@ -193,6 +193,13 @@ Partial Class Grafos
         Me.AdyacenciaToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.AdyacenciaToolStripMenuItem.Text = "Adyacencia"
         '
+        'Grafo1ToolStripMenuItem3
+        '
+        Me.Grafo1ToolStripMenuItem3.BackColor = System.Drawing.Color.Snow
+        Me.Grafo1ToolStripMenuItem3.Name = "Grafo1ToolStripMenuItem3"
+        Me.Grafo1ToolStripMenuItem3.Size = New System.Drawing.Size(224, 26)
+        Me.Grafo1ToolStripMenuItem3.Text = "Grafo 1"
+        '
         'PesoToolStripMenuItem
         '
         Me.PesoToolStripMenuItem.BackColor = System.Drawing.Color.Snow
@@ -200,13 +207,6 @@ Partial Class Grafos
         Me.PesoToolStripMenuItem.Name = "PesoToolStripMenuItem"
         Me.PesoToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.PesoToolStripMenuItem.Text = "Peso"
-        '
-        'Grafo1ToolStripMenuItem3
-        '
-        Me.Grafo1ToolStripMenuItem3.BackColor = System.Drawing.Color.Snow
-        Me.Grafo1ToolStripMenuItem3.Name = "Grafo1ToolStripMenuItem3"
-        Me.Grafo1ToolStripMenuItem3.Size = New System.Drawing.Size(224, 26)
-        Me.Grafo1ToolStripMenuItem3.Text = "Grafo 1"
         '
         'Grafo1ToolStripMenuItem4
         '

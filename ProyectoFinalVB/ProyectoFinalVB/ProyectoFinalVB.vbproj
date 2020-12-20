@@ -136,10 +136,10 @@
     <Compile Include="EstructurasdeDatos\Grafos\Grafos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EstructurasdeDatos\Grafos\MatrizAdyacente.Designer.vb">
-      <DependentUpon>MatrizAdyacente.vb</DependentUpon>
+    <Compile Include="EstructurasdeDatos\Grafos\MatrizAdyacencia.Designer.vb">
+      <DependentUpon>MatrizAdyacencia.vb</DependentUpon>
     </Compile>
-    <Compile Include="EstructurasdeDatos\Grafos\MatrizAdyacente.vb">
+    <Compile Include="EstructurasdeDatos\Grafos\MatrizAdyacencia.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EstructurasdeDatos\Grafos\MatrizPeso.Designer.vb">
@@ -237,8 +237,8 @@
     <EmbeddedResource Include="EstructurasdeDatos\Grafos\Grafos.resx">
       <DependentUpon>Grafos.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EstructurasdeDatos\Grafos\MatrizAdyacente.resx">
-      <DependentUpon>MatrizAdyacente.vb</DependentUpon>
+    <EmbeddedResource Include="EstructurasdeDatos\Grafos\MatrizAdyacencia.resx">
+      <DependentUpon>MatrizAdyacencia.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EstructurasdeDatos\Grafos\MatrizPeso.resx">
       <DependentUpon>MatrizPeso.vb</DependentUpon>

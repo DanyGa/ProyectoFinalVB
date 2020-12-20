@@ -1,4 +1,4 @@
-﻿Public Class MatrizAdyacente
+﻿Public Class MatrizAdyacencia
     Private grafo As List(Of NodoGrafo) = New List(Of NodoGrafo)()
 
     Public Sub New()

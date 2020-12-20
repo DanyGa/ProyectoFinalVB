@@ -257,4 +257,57 @@ Public Class Grafos
 
         acciones1()
     End Sub
+
+    Private Sub Grafo1ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Grafo1ToolStripMenuItem.Click
+        nodos = New List(Of NodoGrafo)()
+        dibuja()
+    End Sub
+
+    Private Sub Grafo1ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles Grafo1ToolStripMenuItem1.Click
+        nodos = New List(Of NodoGrafo)()
+        dibuja()
+        PictureBox1.Image = Nothing
+    End Sub
+
+    Private Sub Grafo1ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles Grafo1ToolStripMenuItem2.Click
+        bandera = 1
+    End Sub
+
+    Private Sub MoverTodoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MoverTodoToolStripMenuItem.Click
+        bandera = 2
+    End Sub
+
+    Private Sub MoverNodoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MoverNodoToolStripMenuItem.Click
+        bandera = 7
+    End Sub
+
+    Private Sub EliminarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EliminarToolStripMenuItem.Click
+        bandera = 3
+    End Sub
+
+    Private Sub DirigidaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DirigidaToolStripMenuItem.Click
+        bandera = 4
+    End Sub
+
+    Private Sub NoDirigidaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NoDirigidaToolStripMenuItem.Click
+        bandera = 5
+    End Sub
+
+    Private Sub EliminarToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles EliminarToolStripMenuItem1.Click
+        bandera = 6
+    End Sub
+
+    Private Sub Grafo1ToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles Grafo1ToolStripMenuItem3.Click
+        Dim hiMoa As MatrizAdyacencia = New MatrizAdyacencia(nodos)
+        hiMoa.Show()
+    End Sub
+
+    Private Sub Grafo1ToolStripMenuItem4_Click(sender As Object, e As EventArgs) Handles Grafo1ToolStripMenuItem4.Click
+        Dim byeMoa As MatrizPeso = New MatrizPeso(nodos)
+        byeMoa.Show()
+    End Sub
+
+    Private Sub Grafos_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        Application.Exit()
+    End Sub
 End Class
