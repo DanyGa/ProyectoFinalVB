@@ -27,6 +27,8 @@ Partial Class ShellSort
         Me.lblMin = New System.Windows.Forms.Label()
         Me.lblMax = New System.Windows.Forms.Label()
         Me.gbTiempo = New System.Windows.Forms.GroupBox()
+        Me.lblIntercambios = New System.Windows.Forms.Label()
+        Me.lblInt = New System.Windows.Forms.Label()
         Me.lblOrdenar = New System.Windows.Forms.Label()
         Me.lblOrd = New System.Windows.Forms.Label()
         Me.btnGenerar = New System.Windows.Forms.Button()
@@ -37,8 +39,6 @@ Partial Class ShellSort
         Me.txtNum = New System.Windows.Forms.TextBox()
         Me.txtMin = New System.Windows.Forms.TextBox()
         Me.txtMax = New System.Windows.Forms.TextBox()
-        Me.lblInt = New System.Windows.Forms.Label()
-        Me.lblIntercambios = New System.Windows.Forms.Label()
         Me.gbTiempo.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -105,6 +105,24 @@ Partial Class ShellSort
         Me.gbTiempo.TabIndex = 4
         Me.gbTiempo.TabStop = False
         '
+        'lblIntercambios
+        '
+        Me.lblIntercambios.AutoSize = True
+        Me.lblIntercambios.Location = New System.Drawing.Point(200, 39)
+        Me.lblIntercambios.Name = "lblIntercambios"
+        Me.lblIntercambios.Size = New System.Drawing.Size(22, 22)
+        Me.lblIntercambios.TabIndex = 3
+        Me.lblIntercambios.Text = "0"
+        '
+        'lblInt
+        '
+        Me.lblInt.AutoSize = True
+        Me.lblInt.Location = New System.Drawing.Point(40, 39)
+        Me.lblInt.Name = "lblInt"
+        Me.lblInt.Size = New System.Drawing.Size(133, 22)
+        Me.lblInt.TabIndex = 2
+        Me.lblInt.Text = "Intercambios:"
+        '
         'lblOrdenar
         '
         Me.lblOrdenar.AutoSize = True
@@ -138,6 +156,7 @@ Partial Class ShellSort
         'btnOrdenar
         '
         Me.btnOrdenar.BackColor = System.Drawing.Color.Snow
+        Me.btnOrdenar.Enabled = False
         Me.btnOrdenar.Font = New System.Drawing.Font("Modern No. 20", 13.8!, System.Drawing.FontStyle.Bold)
         Me.btnOrdenar.ForeColor = System.Drawing.Color.Firebrick
         Me.btnOrdenar.Location = New System.Drawing.Point(242, 280)
@@ -212,24 +231,6 @@ Partial Class ShellSort
         Me.txtMax.Name = "txtMax"
         Me.txtMax.Size = New System.Drawing.Size(116, 26)
         Me.txtMax.TabIndex = 11
-        '
-        'lblInt
-        '
-        Me.lblInt.AutoSize = True
-        Me.lblInt.Location = New System.Drawing.Point(40, 39)
-        Me.lblInt.Name = "lblInt"
-        Me.lblInt.Size = New System.Drawing.Size(133, 22)
-        Me.lblInt.TabIndex = 2
-        Me.lblInt.Text = "Intercambios:"
-        '
-        'lblIntercambios
-        '
-        Me.lblIntercambios.AutoSize = True
-        Me.lblIntercambios.Location = New System.Drawing.Point(200, 39)
-        Me.lblIntercambios.Name = "lblIntercambios"
-        Me.lblIntercambios.Size = New System.Drawing.Size(22, 22)
-        Me.lblIntercambios.TabIndex = 3
-        Me.lblIntercambios.Text = "0"
         '
         'ShellSort
         '

@@ -22,17 +22,234 @@ Partial Class CountingSort
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.lblNum = New System.Windows.Forms.Label()
+        Me.lblMin = New System.Windows.Forms.Label()
+        Me.lblMax = New System.Windows.Forms.Label()
+        Me.lblTitulo = New System.Windows.Forms.Label()
+        Me.btnGenerar = New System.Windows.Forms.Button()
+        Me.btnOrdenar = New System.Windows.Forms.Button()
+        Me.btnMenu = New System.Windows.Forms.Button()
+        Me.gbTiempo = New System.Windows.Forms.GroupBox()
+        Me.lblOrd = New System.Windows.Forms.Label()
+        Me.lblOrdenar = New System.Windows.Forms.Label()
+        Me.lbNum = New System.Windows.Forms.ListBox()
+        Me.lbOrd = New System.Windows.Forms.ListBox()
+        Me.txtNum = New System.Windows.Forms.TextBox()
+        Me.txtMin = New System.Windows.Forms.TextBox()
+        Me.txtMax = New System.Windows.Forms.TextBox()
+        Me.gbTiempo.SuspendLayout()
         Me.SuspendLayout()
+        '
+        'lblNum
+        '
+        Me.lblNum.AutoSize = True
+        Me.lblNum.BackColor = System.Drawing.Color.Snow
+        Me.lblNum.Font = New System.Drawing.Font("Britannic Bold", 13.8!)
+        Me.lblNum.ForeColor = System.Drawing.Color.DarkOliveGreen
+        Me.lblNum.Location = New System.Drawing.Point(62, 130)
+        Me.lblNum.Name = "lblNum"
+        Me.lblNum.Size = New System.Drawing.Size(113, 27)
+        Me.lblNum.TabIndex = 0
+        Me.lblNum.Text = "Numeros:"
+        '
+        'lblMin
+        '
+        Me.lblMin.AutoSize = True
+        Me.lblMin.BackColor = System.Drawing.Color.Snow
+        Me.lblMin.Font = New System.Drawing.Font("Britannic Bold", 13.8!)
+        Me.lblMin.ForeColor = System.Drawing.Color.DarkOliveGreen
+        Me.lblMin.Location = New System.Drawing.Point(62, 176)
+        Me.lblMin.Name = "lblMin"
+        Me.lblMin.Size = New System.Drawing.Size(171, 27)
+        Me.lblMin.TabIndex = 1
+        Me.lblMin.Text = "Limite Minimo:"
+        '
+        'lblMax
+        '
+        Me.lblMax.AutoSize = True
+        Me.lblMax.BackColor = System.Drawing.Color.Snow
+        Me.lblMax.Font = New System.Drawing.Font("Britannic Bold", 13.8!)
+        Me.lblMax.ForeColor = System.Drawing.Color.DarkOliveGreen
+        Me.lblMax.Location = New System.Drawing.Point(62, 223)
+        Me.lblMax.Name = "lblMax"
+        Me.lblMax.Size = New System.Drawing.Size(174, 27)
+        Me.lblMax.TabIndex = 2
+        Me.lblMax.Text = "Limite Maximo:"
+        '
+        'lblTitulo
+        '
+        Me.lblTitulo.AutoSize = True
+        Me.lblTitulo.BackColor = System.Drawing.Color.Snow
+        Me.lblTitulo.Font = New System.Drawing.Font("Elephant", 22.2!)
+        Me.lblTitulo.ForeColor = System.Drawing.Color.DarkOliveGreen
+        Me.lblTitulo.Location = New System.Drawing.Point(282, 35)
+        Me.lblTitulo.Name = "lblTitulo"
+        Me.lblTitulo.Size = New System.Drawing.Size(290, 49)
+        Me.lblTitulo.TabIndex = 3
+        Me.lblTitulo.Text = "Counting Sort"
+        '
+        'btnGenerar
+        '
+        Me.btnGenerar.BackColor = System.Drawing.Color.Snow
+        Me.btnGenerar.Font = New System.Drawing.Font("Modern No. 20", 13.8!, System.Drawing.FontStyle.Bold)
+        Me.btnGenerar.ForeColor = System.Drawing.Color.DarkOliveGreen
+        Me.btnGenerar.Location = New System.Drawing.Point(66, 280)
+        Me.btnGenerar.Name = "btnGenerar"
+        Me.btnGenerar.Size = New System.Drawing.Size(136, 69)
+        Me.btnGenerar.TabIndex = 4
+        Me.btnGenerar.Text = "Generar"
+        Me.btnGenerar.UseVisualStyleBackColor = False
+        '
+        'btnOrdenar
+        '
+        Me.btnOrdenar.BackColor = System.Drawing.Color.Snow
+        Me.btnOrdenar.Font = New System.Drawing.Font("Modern No. 20", 13.8!, System.Drawing.FontStyle.Bold)
+        Me.btnOrdenar.ForeColor = System.Drawing.Color.DarkOliveGreen
+        Me.btnOrdenar.Location = New System.Drawing.Point(242, 280)
+        Me.btnOrdenar.Name = "btnOrdenar"
+        Me.btnOrdenar.Size = New System.Drawing.Size(136, 69)
+        Me.btnOrdenar.TabIndex = 5
+        Me.btnOrdenar.Text = "Ordenar"
+        Me.btnOrdenar.UseVisualStyleBackColor = False
+        '
+        'btnMenu
+        '
+        Me.btnMenu.BackColor = System.Drawing.Color.Snow
+        Me.btnMenu.Font = New System.Drawing.Font("Modern No. 20", 13.8!, System.Drawing.FontStyle.Bold)
+        Me.btnMenu.ForeColor = System.Drawing.Color.DarkOliveGreen
+        Me.btnMenu.Location = New System.Drawing.Point(718, 521)
+        Me.btnMenu.Name = "btnMenu"
+        Me.btnMenu.Size = New System.Drawing.Size(107, 53)
+        Me.btnMenu.TabIndex = 6
+        Me.btnMenu.Text = "Menu"
+        Me.btnMenu.UseVisualStyleBackColor = False
+        '
+        'gbTiempo
+        '
+        Me.gbTiempo.BackColor = System.Drawing.Color.Snow
+        Me.gbTiempo.Controls.Add(Me.lblOrdenar)
+        Me.gbTiempo.Controls.Add(Me.lblOrd)
+        Me.gbTiempo.Font = New System.Drawing.Font("Britannic Bold", 12.0!)
+        Me.gbTiempo.ForeColor = System.Drawing.Color.DarkOliveGreen
+        Me.gbTiempo.Location = New System.Drawing.Point(23, 401)
+        Me.gbTiempo.Name = "gbTiempo"
+        Me.gbTiempo.Size = New System.Drawing.Size(410, 94)
+        Me.gbTiempo.TabIndex = 7
+        Me.gbTiempo.TabStop = False
+        '
+        'lblOrd
+        '
+        Me.lblOrd.AutoSize = True
+        Me.lblOrd.Location = New System.Drawing.Point(19, 37)
+        Me.lblOrd.Name = "lblOrd"
+        Me.lblOrd.Size = New System.Drawing.Size(90, 22)
+        Me.lblOrd.TabIndex = 0
+        Me.lblOrd.Text = "Ordenar:"
+        '
+        'lblOrdenar
+        '
+        Me.lblOrdenar.AutoSize = True
+        Me.lblOrdenar.Location = New System.Drawing.Point(135, 37)
+        Me.lblOrdenar.Name = "lblOrdenar"
+        Me.lblOrdenar.Size = New System.Drawing.Size(40, 22)
+        Me.lblOrdenar.TabIndex = 1
+        Me.lblOrdenar.Text = "0:0"
+        '
+        'lbNum
+        '
+        Me.lbNum.BackColor = System.Drawing.Color.Snow
+        Me.lbNum.Font = New System.Drawing.Font("Britannic Bold", 10.2!)
+        Me.lbNum.ForeColor = System.Drawing.Color.DarkOliveGreen
+        Me.lbNum.FormattingEnabled = True
+        Me.lbNum.ItemHeight = 19
+        Me.lbNum.Location = New System.Drawing.Point(494, 130)
+        Me.lbNum.Name = "lbNum"
+        Me.lbNum.Size = New System.Drawing.Size(110, 365)
+        Me.lbNum.TabIndex = 2
+        '
+        'lbOrd
+        '
+        Me.lbOrd.BackColor = System.Drawing.Color.Snow
+        Me.lbOrd.Font = New System.Drawing.Font("Britannic Bold", 10.2!)
+        Me.lbOrd.ForeColor = System.Drawing.Color.DarkOliveGreen
+        Me.lbOrd.FormattingEnabled = True
+        Me.lbOrd.ItemHeight = 19
+        Me.lbOrd.Location = New System.Drawing.Point(647, 130)
+        Me.lbOrd.Name = "lbOrd"
+        Me.lbOrd.Size = New System.Drawing.Size(110, 365)
+        Me.lbOrd.TabIndex = 3
+        '
+        'txtNum
+        '
+        Me.txtNum.BackColor = System.Drawing.Color.Snow
+        Me.txtNum.Font = New System.Drawing.Font("Britannic Bold", 10.2!)
+        Me.txtNum.ForeColor = System.Drawing.Color.DarkOliveGreen
+        Me.txtNum.Location = New System.Drawing.Point(197, 135)
+        Me.txtNum.Name = "txtNum"
+        Me.txtNum.Size = New System.Drawing.Size(181, 26)
+        Me.txtNum.TabIndex = 8
+        '
+        'txtMin
+        '
+        Me.txtMin.BackColor = System.Drawing.Color.Snow
+        Me.txtMin.Font = New System.Drawing.Font("Britannic Bold", 10.2!)
+        Me.txtMin.ForeColor = System.Drawing.Color.DarkOliveGreen
+        Me.txtMin.Location = New System.Drawing.Point(262, 181)
+        Me.txtMin.Name = "txtMin"
+        Me.txtMin.Size = New System.Drawing.Size(116, 26)
+        Me.txtMin.TabIndex = 9
+        '
+        'txtMax
+        '
+        Me.txtMax.BackColor = System.Drawing.Color.Snow
+        Me.txtMax.Font = New System.Drawing.Font("Britannic Bold", 10.2!)
+        Me.txtMax.ForeColor = System.Drawing.Color.DarkOliveGreen
+        Me.txtMax.Location = New System.Drawing.Point(262, 228)
+        Me.txtMax.Name = "txtMax"
+        Me.txtMax.Size = New System.Drawing.Size(116, 26)
+        Me.txtMax.TabIndex = 10
         '
         'CountingSort
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.ProyectoFinalVB.My.Resources.Resources.CountingSort
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(851, 601)
+        Me.Controls.Add(Me.txtMax)
+        Me.Controls.Add(Me.txtMin)
+        Me.Controls.Add(Me.txtNum)
+        Me.Controls.Add(Me.lbNum)
+        Me.Controls.Add(Me.lbOrd)
+        Me.Controls.Add(Me.gbTiempo)
+        Me.Controls.Add(Me.btnMenu)
+        Me.Controls.Add(Me.btnOrdenar)
+        Me.Controls.Add(Me.btnGenerar)
+        Me.Controls.Add(Me.lblTitulo)
+        Me.Controls.Add(Me.lblMax)
+        Me.Controls.Add(Me.lblMin)
+        Me.Controls.Add(Me.lblNum)
         Me.Name = "CountingSort"
-        Me.Text = "CountingSort"
+        Me.Text = "Counting Sort"
+        Me.gbTiempo.ResumeLayout(False)
+        Me.gbTiempo.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
+
+    Friend WithEvents lblNum As Label
+    Friend WithEvents lblMin As Label
+    Friend WithEvents lblMax As Label
+    Friend WithEvents lblTitulo As Label
+    Friend WithEvents btnGenerar As Button
+    Friend WithEvents btnOrdenar As Button
+    Friend WithEvents btnMenu As Button
+    Friend WithEvents gbTiempo As GroupBox
+    Friend WithEvents lblOrdenar As Label
+    Friend WithEvents lblOrd As Label
+    Friend WithEvents lbNum As ListBox
+    Friend WithEvents lbOrd As ListBox
+    Friend WithEvents txtNum As TextBox
+    Friend WithEvents txtMin As TextBox
+    Friend WithEvents txtMax As TextBox
 End Class

@@ -228,6 +228,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AlgoritmosdeOrdenamiento\BubbleSort.resx">
+      <DependentUpon>BubbleSort.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlgoritmosdeOrdenamiento\CocktailSort.resx">
+      <DependentUpon>CocktailSort.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AlgoritmosdeOrdenamiento\CountingSort.resx">
       <DependentUpon>CountingSort.vb</DependentUpon>
     </EmbeddedResource>
