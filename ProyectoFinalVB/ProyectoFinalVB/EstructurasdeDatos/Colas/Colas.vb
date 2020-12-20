@@ -60,7 +60,7 @@ Public Class Colas
             Dim contador As Integer = 0
             Dim ruta As String = Seleccionar.FileName
             Dim linea As String = File.ReadAllText(ruta)
-            Dim Lista As String() = linea.Split(","c)
+            Dim Lista As String() = linea.Split(", ")
 
             For Each i As String In Lista
                 n = New NodoCola()

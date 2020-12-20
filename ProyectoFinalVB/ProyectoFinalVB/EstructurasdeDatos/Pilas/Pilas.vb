@@ -60,7 +60,7 @@ Public Class Pilas
                 MiPila.myTop = Nothing
                 Dim ruta As String = Seleccionar.FileName
                 Dim linea As String = File.ReadAllText(ruta)
-                Dim Pila As String() = linea.Split(","c)
+                Dim Pila As String() = linea.Split(", ")
                 Dim contador As Integer = Pila.Length - 1
 
                 For Each i As String In Pila
