@@ -120,6 +120,7 @@ Partial Class Pilas
         'btnBorrarP
         '
         Me.btnBorrarP.BackColor = System.Drawing.Color.Snow
+        Me.btnBorrarP.Enabled = False
         Me.btnBorrarP.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold)
         Me.btnBorrarP.ForeColor = System.Drawing.Color.CadetBlue
         Me.btnBorrarP.Location = New System.Drawing.Point(96, 300)
@@ -132,6 +133,7 @@ Partial Class Pilas
         'btnContar
         '
         Me.btnContar.BackColor = System.Drawing.Color.Snow
+        Me.btnContar.Enabled = False
         Me.btnContar.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold)
         Me.btnContar.ForeColor = System.Drawing.Color.CadetBlue
         Me.btnContar.Location = New System.Drawing.Point(640, 118)
@@ -144,6 +146,7 @@ Partial Class Pilas
         'btnGuardar
         '
         Me.btnGuardar.BackColor = System.Drawing.Color.Snow
+        Me.btnGuardar.Enabled = False
         Me.btnGuardar.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold)
         Me.btnGuardar.ForeColor = System.Drawing.Color.CadetBlue
         Me.btnGuardar.Location = New System.Drawing.Point(640, 209)

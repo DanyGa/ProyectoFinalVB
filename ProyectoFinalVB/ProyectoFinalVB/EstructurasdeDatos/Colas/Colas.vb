@@ -11,9 +11,11 @@ Public Class Colas
             MiCola.Encolar(n)
             lblCola.Text = MiCola.ToString()
             txtNodo.Clear()
+            btnBorrarC.Enabled = True
+            btnConsultar.Enabled = True
+            btnGuardar.Enabled = True
         Catch
-            MessageBox.Show("Bruh")
-            txtNodo.Clear()
+            MessageBox.Show("Introduzca un número válido.")
         End Try
     End Sub
 
@@ -51,33 +53,30 @@ Public Class Colas
     End Sub
 
     Private Sub btnCargar_Click(sender As Object, e As EventArgs) Handles btnCargar.Click
-        Try
-            Dim Seleccionar As OpenFileDialog = New OpenFileDialog()
+        Dim Seleccionar As OpenFileDialog = New OpenFileDialog()
 
-            If Seleccionar.ShowDialog() = DialogResult.OK Then
-                MiCola.myHead = Nothing
-                Dim contador As Integer = 0
-                Dim ruta As String = Seleccionar.FileName
-                Dim linea As String = File.ReadAllText(ruta)
-                Dim Lista As String() = linea.Split(","c)
+        If Seleccionar.ShowDialog() = DialogResult.OK Then
+            MiCola.myHead = Nothing
+            Dim contador As Integer = 0
+            Dim ruta As String = Seleccionar.FileName
+            Dim linea As String = File.ReadAllText(ruta)
+            Dim Lista As String() = linea.Split(","c)
 
-                For Each i As String In Lista
-                    n = New NodoCola()
-                    n.myDato = Integer.Parse(Lista(contador))
-                    MiCola.Encolar(n)
-                    contador += 1
-                Next
+            For Each i As String In Lista
+                n = New NodoCola()
+                n.myDato = Integer.Parse(Lista(contador))
+                MiCola.Encolar(n)
+                contador += 1
+            Next
 
-                lblCola.Text = MiCola.ToString()
-            End If
-
-        Catch
-            MessageBox.Show("Error al cargar")
-        End Try
+            lblCola.Text = MiCola.ToString()
+        End If
     End Sub
 
     Private Sub btnMenu_Click(sender As Object, e As EventArgs) Handles btnMenu.Click
-
+        Dim annyeonghaseyo As New MenuPrincipal()
+        annyeonghaseyo.Show()
+        Hide()
     End Sub
 
     Private Sub Colas_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed

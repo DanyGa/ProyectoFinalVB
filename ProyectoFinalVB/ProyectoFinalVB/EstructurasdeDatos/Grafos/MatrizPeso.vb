@@ -34,8 +34,4 @@
             Next
         Next
     End Sub
-
-    Private Sub MatrizPeso_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
-        Application.Exit()
-    End Sub
 End Class

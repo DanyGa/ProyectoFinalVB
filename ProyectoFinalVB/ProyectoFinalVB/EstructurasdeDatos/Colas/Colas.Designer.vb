@@ -22,10 +22,10 @@ Partial Class Colas
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblDato = New System.Windows.Forms.Label()
+        Me.lblThis = New System.Windows.Forms.Label()
         Me.lblCola = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lblTitulo = New System.Windows.Forms.Label()
         Me.txtNodo = New System.Windows.Forms.TextBox()
         Me.btnDesencolar = New System.Windows.Forms.Button()
         Me.btnEncolar = New System.Windows.Forms.Button()
@@ -36,117 +36,156 @@ Partial Class Colas
         Me.btnMenu = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Label1
+        'lblDato
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(300, 270)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(51, 17)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Label1"
+        Me.lblDato.AutoSize = True
+        Me.lblDato.BackColor = System.Drawing.Color.Snow
+        Me.lblDato.Font = New System.Drawing.Font("Britannic Bold", 16.2!)
+        Me.lblDato.ForeColor = System.Drawing.Color.SteelBlue
+        Me.lblDato.Location = New System.Drawing.Point(253, 271)
+        Me.lblDato.Name = "lblDato"
+        Me.lblDato.Size = New System.Drawing.Size(79, 31)
+        Me.lblDato.TabIndex = 0
+        Me.lblDato.Text = "Dato:"
         '
-        'Label2
+        'lblThis
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(266, 167)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(51, 17)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Label2"
+        Me.lblThis.AutoSize = True
+        Me.lblThis.BackColor = System.Drawing.Color.Snow
+        Me.lblThis.Font = New System.Drawing.Font("Britannic Bold", 16.2!)
+        Me.lblThis.ForeColor = System.Drawing.Color.SteelBlue
+        Me.lblThis.Location = New System.Drawing.Point(253, 153)
+        Me.lblThis.Name = "lblThis"
+        Me.lblThis.Size = New System.Drawing.Size(77, 31)
+        Me.lblThis.TabIndex = 1
+        Me.lblThis.Text = "Cola:"
         '
         'lblCola
         '
         Me.lblCola.AutoSize = True
-        Me.lblCola.Location = New System.Drawing.Point(337, 167)
+        Me.lblCola.BackColor = System.Drawing.Color.Snow
+        Me.lblCola.Font = New System.Drawing.Font("Britannic Bold", 16.2!)
+        Me.lblCola.ForeColor = System.Drawing.Color.SteelBlue
+        Me.lblCola.Location = New System.Drawing.Point(358, 153)
         Me.lblCola.Name = "lblCola"
-        Me.lblCola.Size = New System.Drawing.Size(51, 17)
+        Me.lblCola.Size = New System.Drawing.Size(42, 31)
         Me.lblCola.TabIndex = 2
-        Me.lblCola.Text = "Label3"
+        Me.lblCola.Text = "----"
         '
-        'Label4
+        'lblTitulo
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(318, 47)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(51, 17)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Label4"
+        Me.lblTitulo.AutoSize = True
+        Me.lblTitulo.BackColor = System.Drawing.Color.Snow
+        Me.lblTitulo.Font = New System.Drawing.Font("Elephant", 22.2!)
+        Me.lblTitulo.ForeColor = System.Drawing.Color.SteelBlue
+        Me.lblTitulo.Location = New System.Drawing.Point(379, 39)
+        Me.lblTitulo.Name = "lblTitulo"
+        Me.lblTitulo.Size = New System.Drawing.Size(127, 49)
+        Me.lblTitulo.TabIndex = 3
+        Me.lblTitulo.Text = "Colas"
         '
         'txtNodo
         '
-        Me.txtNodo.Location = New System.Drawing.Point(374, 270)
+        Me.txtNodo.BackColor = System.Drawing.Color.Snow
+        Me.txtNodo.ForeColor = System.Drawing.Color.SteelBlue
+        Me.txtNodo.Location = New System.Drawing.Point(364, 277)
         Me.txtNodo.Name = "txtNodo"
-        Me.txtNodo.Size = New System.Drawing.Size(100, 22)
+        Me.txtNodo.Size = New System.Drawing.Size(134, 22)
         Me.txtNodo.TabIndex = 4
         '
         'btnDesencolar
         '
-        Me.btnDesencolar.Location = New System.Drawing.Point(75, 167)
+        Me.btnDesencolar.BackColor = System.Drawing.Color.Snow
+        Me.btnDesencolar.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.btnDesencolar.ForeColor = System.Drawing.Color.SteelBlue
+        Me.btnDesencolar.Location = New System.Drawing.Point(96, 209)
         Me.btnDesencolar.Name = "btnDesencolar"
-        Me.btnDesencolar.Size = New System.Drawing.Size(75, 23)
+        Me.btnDesencolar.Size = New System.Drawing.Size(129, 58)
         Me.btnDesencolar.TabIndex = 5
-        Me.btnDesencolar.Text = "Button1"
-        Me.btnDesencolar.UseVisualStyleBackColor = True
+        Me.btnDesencolar.Text = "Desencolar"
+        Me.btnDesencolar.UseVisualStyleBackColor = False
         '
         'btnEncolar
         '
-        Me.btnEncolar.Location = New System.Drawing.Point(109, 121)
+        Me.btnEncolar.BackColor = System.Drawing.Color.Snow
+        Me.btnEncolar.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.btnEncolar.ForeColor = System.Drawing.Color.SteelBlue
+        Me.btnEncolar.Location = New System.Drawing.Point(96, 118)
         Me.btnEncolar.Name = "btnEncolar"
-        Me.btnEncolar.Size = New System.Drawing.Size(75, 23)
+        Me.btnEncolar.Size = New System.Drawing.Size(129, 58)
         Me.btnEncolar.TabIndex = 6
-        Me.btnEncolar.Text = "Button2"
-        Me.btnEncolar.UseVisualStyleBackColor = True
+        Me.btnEncolar.Text = "Encolar"
+        Me.btnEncolar.UseVisualStyleBackColor = False
         '
         'btnBorrarC
         '
-        Me.btnBorrarC.Location = New System.Drawing.Point(83, 196)
+        Me.btnBorrarC.BackColor = System.Drawing.Color.Snow
+        Me.btnBorrarC.Enabled = False
+        Me.btnBorrarC.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.btnBorrarC.ForeColor = System.Drawing.Color.SteelBlue
+        Me.btnBorrarC.Location = New System.Drawing.Point(96, 300)
         Me.btnBorrarC.Name = "btnBorrarC"
-        Me.btnBorrarC.Size = New System.Drawing.Size(75, 23)
+        Me.btnBorrarC.Size = New System.Drawing.Size(129, 58)
         Me.btnBorrarC.TabIndex = 7
-        Me.btnBorrarC.Text = "Button3"
-        Me.btnBorrarC.UseVisualStyleBackColor = True
+        Me.btnBorrarC.Text = "Borrar Cola"
+        Me.btnBorrarC.UseVisualStyleBackColor = False
         '
         'btnCargar
         '
-        Me.btnCargar.Location = New System.Drawing.Point(505, 270)
+        Me.btnCargar.BackColor = System.Drawing.Color.Snow
+        Me.btnCargar.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.btnCargar.ForeColor = System.Drawing.Color.SteelBlue
+        Me.btnCargar.Location = New System.Drawing.Point(640, 300)
         Me.btnCargar.Name = "btnCargar"
-        Me.btnCargar.Size = New System.Drawing.Size(75, 23)
+        Me.btnCargar.Size = New System.Drawing.Size(129, 58)
         Me.btnCargar.TabIndex = 8
-        Me.btnCargar.Text = "Button4"
-        Me.btnCargar.UseVisualStyleBackColor = True
+        Me.btnCargar.Text = "Cargar Cola"
+        Me.btnCargar.UseVisualStyleBackColor = False
         '
         'btnConsultar
         '
-        Me.btnConsultar.Location = New System.Drawing.Point(447, 121)
+        Me.btnConsultar.BackColor = System.Drawing.Color.Snow
+        Me.btnConsultar.Enabled = False
+        Me.btnConsultar.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.btnConsultar.ForeColor = System.Drawing.Color.SteelBlue
+        Me.btnConsultar.Location = New System.Drawing.Point(640, 118)
         Me.btnConsultar.Name = "btnConsultar"
-        Me.btnConsultar.Size = New System.Drawing.Size(75, 23)
+        Me.btnConsultar.Size = New System.Drawing.Size(129, 58)
         Me.btnConsultar.TabIndex = 9
-        Me.btnConsultar.Text = "Button5"
-        Me.btnConsultar.UseVisualStyleBackColor = True
+        Me.btnConsultar.Text = "Consultar"
+        Me.btnConsultar.UseVisualStyleBackColor = False
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(505, 199)
+        Me.btnGuardar.BackColor = System.Drawing.Color.Snow
+        Me.btnGuardar.Enabled = False
+        Me.btnGuardar.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.btnGuardar.ForeColor = System.Drawing.Color.SteelBlue
+        Me.btnGuardar.Location = New System.Drawing.Point(640, 209)
         Me.btnGuardar.Name = "btnGuardar"
-        Me.btnGuardar.Size = New System.Drawing.Size(75, 23)
+        Me.btnGuardar.Size = New System.Drawing.Size(129, 58)
         Me.btnGuardar.TabIndex = 10
-        Me.btnGuardar.Text = "Button6"
-        Me.btnGuardar.UseVisualStyleBackColor = True
+        Me.btnGuardar.Text = "Guardar Cola"
+        Me.btnGuardar.UseVisualStyleBackColor = False
         '
         'btnMenu
         '
-        Me.btnMenu.Location = New System.Drawing.Point(614, 313)
+        Me.btnMenu.BackColor = System.Drawing.Color.Snow
+        Me.btnMenu.Font = New System.Drawing.Font("Modern No. 20", 10.8!, System.Drawing.FontStyle.Bold)
+        Me.btnMenu.ForeColor = System.Drawing.Color.SteelBlue
+        Me.btnMenu.Location = New System.Drawing.Point(766, 405)
         Me.btnMenu.Name = "btnMenu"
-        Me.btnMenu.Size = New System.Drawing.Size(75, 23)
+        Me.btnMenu.Size = New System.Drawing.Size(90, 43)
         Me.btnMenu.TabIndex = 11
-        Me.btnMenu.Text = "Button7"
-        Me.btnMenu.UseVisualStyleBackColor = True
+        Me.btnMenu.Text = "Menu"
+        Me.btnMenu.UseVisualStyleBackColor = False
         '
         'Colas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.BackgroundImage = Global.ProyectoFinalVB.My.Resources.Resources.Colas
+        Me.ClientSize = New System.Drawing.Size(951, 481)
         Me.Controls.Add(Me.btnMenu)
         Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.btnConsultar)
@@ -155,21 +194,22 @@ Partial Class Colas
         Me.Controls.Add(Me.btnEncolar)
         Me.Controls.Add(Me.btnDesencolar)
         Me.Controls.Add(Me.txtNodo)
-        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.lblTitulo)
         Me.Controls.Add(Me.lblCola)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblThis)
+        Me.Controls.Add(Me.lblDato)
         Me.Name = "Colas"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Colas"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents lblDato As Label
+    Friend WithEvents lblThis As Label
     Friend WithEvents lblCola As Label
-    Friend WithEvents Label4 As Label
+    Friend WithEvents lblTitulo As Label
     Friend WithEvents txtNodo As TextBox
     Friend WithEvents btnDesencolar As Button
     Friend WithEvents btnEncolar As Button
