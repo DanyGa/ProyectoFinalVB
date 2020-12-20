@@ -243,11 +243,20 @@
     <EmbeddedResource Include="EstructurasdeDatos\Pilas\Pilas.resx">
       <DependentUpon>Pilas.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenuAlgoritmos.resx">
+      <DependentUpon>MenuAlgoritmos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuEstructuras.resx">
+      <DependentUpon>MenuEstructuras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -261,6 +270,15 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuAlgoritmos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuPrincipal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuEstructuras.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
