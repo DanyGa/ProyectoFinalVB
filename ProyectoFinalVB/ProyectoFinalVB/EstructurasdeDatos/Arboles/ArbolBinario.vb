@@ -1,83 +1,112 @@
-﻿Public Class ArbolBinario
-    Public pre_orden As String
-    Public post_orden As String
-    Public en_orden As String
+﻿Imports System.Threading
 
-    Class Nodo
-        Public info As Integer
-        Public izq, der As Nodo
-    End Class
+Public Class ArbolBinario
+    Private valor As String = ""
 
-    Private raiz As Nodo
+    Public Property myValor As String
+        Get
+            Return valor
+        End Get
+        Set(ByVal value As String)
+            valor = value
+        End Set
+    End Property
+
+    Public Raiz As NodoArbol
+    Public aux As NodoArbol
 
     Public Sub New()
-        raiz = Nothing
+        aux = New NodoArbol()
     End Sub
 
-    Public Sub Insertar(ByVal info As Integer)
-        Dim nuevo As Nodo
-        nuevo = New Nodo()
-        nuevo.info = info
-        nuevo.izq = Nothing
-        nuevo.der = Nothing
+    Public Sub New(ByVal nueva_raiz As NodoArbol)
+        Raiz = nueva_raiz
+    End Sub
 
-        If raiz Is Nothing Then
-            raiz = nuevo
+    Public altura As Integer = 0
+
+    Public Sub Insertar(ByVal x As Integer)
+        If Raiz Is Nothing Then
+            Raiz = New NodoArbol(x, Nothing, Nothing, Nothing)
+            Raiz.nivel = 0
         Else
-            Dim reco As Nodo, anterior As Nodo = Nothing
-            reco = raiz
+            Raiz = Raiz.Insertar(x, Raiz, Raiz.nivel)
+            altura = Raiz.nivel
+        End If
+    End Sub
 
-            While reco IsNot Nothing
-                anterior = reco
+    Public Sub Eliminar(ByVal x As Integer)
+        If Raiz Is Nothing Then
+            Raiz = New NodoArbol(x, Nothing, Nothing, Nothing)
+        Else
+            Raiz.Eliminar(x, Raiz)
+        End If
+    End Sub
 
-                If info < reco.info Then
-                    reco = reco.izq
-                Else
-                    reco = reco.der
-                End If
-            End While
+    Public Function RaizArbol() As NodoArbol
+        Dim t As NodoArbol = New NodoArbol()
+        Return Raiz
+    End Function
 
-            If info < anterior.info Then
-                anterior.izq = nuevo
-            Else
-                anterior.der = nuevo
+    Public Function Buscar(ByVal x As Integer) As NodoArbol
+        Dim n As NodoArbol = New NodoArbol()
+
+        If Raiz Is Nothing Then
+            Raiz = New NodoArbol(x, Nothing, Nothing, Nothing)
+        Else
+            n = Raiz.buscar(x, Raiz)
+        End If
+
+        Return n
+    End Function
+
+    Public Sub DibujarArbol(ByVal grafo As Graphics, ByVal fuente As Font, ByVal Relleno As Brush, ByVal RellenoFuente As Brush, ByVal Lapiz As Pen, ByVal encuentro As Brush, ByVal i As Integer, ByVal m As Integer, ByVal max As Integer, ByVal min As Integer)
+        Dim x As Integer = 400
+        Dim y As Integer = 75
+        If Raiz Is Nothing Then Return
+        Raiz.PosicionNodo(x, y)
+        Raiz.DibujarRamas(grafo, Lapiz)
+        Raiz.DibujarNodo(grafo, fuente, Relleno, RellenoFuente, Lapiz, encuentro, i, m, max, min)
+    End Sub
+
+    Public x1 As Integer = 400
+    Public y2 As Integer = 75
+
+    Public Sub Colorear(ByVal grafo As Graphics, ByVal fuente As Font, ByVal Relleno As Brush, ByVal RellenoFuente As Brush, ByVal Lapiz As Pen, ByVal Raiz As NodoArbol, ByVal post As Boolean, ByVal inor As Boolean, ByVal preor As Boolean)
+        Dim entorno As Brush = Brushes.Blue
+
+        If inor = True Then
+
+            If Raiz IsNot Nothing Then
+                Colorear(grafo, fuente, Relleno, RellenoFuente, Lapiz, Raiz.nIzquierdo, post, inor, preor)
+                Raiz.colorear(grafo, fuente, entorno, RellenoFuente, Lapiz)
+                Thread.Sleep(1000)
+                Raiz.colorear(grafo, fuente, Relleno, RellenoFuente, Lapiz)
+                Colorear(grafo, fuente, Relleno, RellenoFuente, Lapiz, Raiz.nDerecho, post, inor, preor)
             End If
+        ElseIf preor = True Then
+
+            If Raiz IsNot Nothing Then
+                Raiz.colorear(grafo, fuente, entorno, RellenoFuente, Lapiz)
+                Thread.Sleep(1000)
+                Raiz.colorear(grafo, fuente, Relleno, RellenoFuente, Lapiz)
+                Colorear(grafo, fuente, Relleno, RellenoFuente, Lapiz, Raiz.nIzquierdo, post, inor, preor)
+                Colorear(grafo, fuente, Relleno, RellenoFuente, Lapiz, Raiz.nDerecho, post, inor, preor)
+            End If
+        ElseIf post = True Then
+
+            If Raiz IsNot Nothing Then
+                Colorear(grafo, fuente, Relleno, RellenoFuente, Lapiz, Raiz.nIzquierdo, post, inor, preor)
+                Colorear(grafo, fuente, Relleno, RellenoFuente, Lapiz, Raiz.nDerecho, post, inor, preor)
+                Raiz.colorear(grafo, fuente, entorno, RellenoFuente, Lapiz)
+                Thread.Sleep(1000)
+                Raiz.colorear(grafo, fuente, Relleno, RellenoFuente, Lapiz)
+            End If
+        Else
+            Raiz.colorear(grafo, fuente, entorno, RellenoFuente, Lapiz)
+            valor += Raiz.myInfo & ""
+            Thread.Sleep(1000)
+            Raiz.colorear(grafo, fuente, Relleno, RellenoFuente, Lapiz)
         End If
-    End Sub
-
-    Private Sub PostOrden(ByVal reco As Nodo)
-        If reco IsNot Nothing Then
-            post_orden += reco.info & " "
-            PostOrden(reco.izq)
-            PostOrden(reco.der)
-        End If
-    End Sub
-
-    Public Sub PostOrden()
-        PostOrden(raiz)
-    End Sub
-
-    Private Sub PreOrden(ByVal reco As Nodo)
-        If reco IsNot Nothing Then
-            PreOrden(reco.izq)
-            pre_orden += reco.info & " "
-            PreOrden(reco.der)
-        End If
-    End Sub
-
-    Public Sub PreOrden()
-        PreOrden(raiz)
-    End Sub
-
-    Private Sub EnOrden(ByVal reco As Nodo)
-        If reco IsNot Nothing Then
-            EnOrden(reco.izq)
-            EnOrden(reco.der)
-            en_orden += reco.info & " "
-        End If
-    End Sub
-
-    Public Sub EnOrden()
-        EnOrden(raiz)
     End Sub
 End Class

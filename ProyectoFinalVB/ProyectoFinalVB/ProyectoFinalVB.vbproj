@@ -228,6 +228,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="EstructurasdeDatos\Arboles\Arbol.resx">
+      <DependentUpon>Arbol.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EstructurasdeDatos\Colas\Colas.resx">
       <DependentUpon>Colas.vb</DependentUpon>
     </EmbeddedResource>
@@ -239,6 +242,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EstructurasdeDatos\Grafos\MatrizPeso.resx">
       <DependentUpon>MatrizPeso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstructurasdeDatos\Listas\ListaDobleCircular\ListaDobleCircular.resx">
+      <DependentUpon>ListaDobleCircular.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstructurasdeDatos\Listas\ListaDoble\ListaDoble.resx">
+      <DependentUpon>ListaDoble.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstructurasdeDatos\Listas\ListaSimpleCircular\ListaSimpleCircular.resx">
+      <DependentUpon>ListaSimpleCircular.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstructurasdeDatos\Listas\ListaSimple\ListaSimple.resx">
+      <DependentUpon>ListaSimple.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EstructurasdeDatos\Listas\MenuListas.resx">
       <DependentUpon>MenuListas.vb</DependentUpon>
@@ -288,6 +303,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\MenuListas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ListaDoble.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ListaDobleCircular.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ListaSimple.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ListaSimpleCircular.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

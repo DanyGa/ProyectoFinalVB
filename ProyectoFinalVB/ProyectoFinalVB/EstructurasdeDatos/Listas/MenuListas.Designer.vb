@@ -22,48 +22,50 @@ Partial Class MenuListas
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.lblIns = New System.Windows.Forms.Label()
+        Me.lblTitulo = New System.Windows.Forms.Label()
+        Me.btnSimple = New System.Windows.Forms.Button()
         Me.btnDoble = New System.Windows.Forms.Button()
         Me.btnSCircular = New System.Windows.Forms.Button()
         Me.btnDCircular = New System.Windows.Forms.Button()
         Me.btnMenu = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Label1
+        'lblIns
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Snow
-        Me.Label1.ForeColor = System.Drawing.Color.Firebrick
-        Me.Label1.Location = New System.Drawing.Point(336, 82)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(51, 17)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Label1"
+        Me.lblIns.AutoSize = True
+        Me.lblIns.BackColor = System.Drawing.Color.Snow
+        Me.lblIns.Font = New System.Drawing.Font("Modern No. 20", 16.2!, System.Drawing.FontStyle.Bold)
+        Me.lblIns.ForeColor = System.Drawing.Color.Firebrick
+        Me.lblIns.Location = New System.Drawing.Point(153, 99)
+        Me.lblIns.Name = "lblIns"
+        Me.lblIns.Size = New System.Drawing.Size(346, 30)
+        Me.lblIns.TabIndex = 0
+        Me.lblIns.Text = "Selecciona un tipo de Lista"
         '
-        'Label2
+        'lblTitulo
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Snow
-        Me.Label2.ForeColor = System.Drawing.Color.Firebrick
-        Me.Label2.Location = New System.Drawing.Point(325, 99)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(51, 17)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Label2"
+        Me.lblTitulo.AutoSize = True
+        Me.lblTitulo.BackColor = System.Drawing.Color.Snow
+        Me.lblTitulo.Font = New System.Drawing.Font("Elephant", 25.8!, System.Drawing.FontStyle.Bold)
+        Me.lblTitulo.ForeColor = System.Drawing.Color.Firebrick
+        Me.lblTitulo.Location = New System.Drawing.Point(246, 44)
+        Me.lblTitulo.Name = "lblTitulo"
+        Me.lblTitulo.Size = New System.Drawing.Size(164, 55)
+        Me.lblTitulo.TabIndex = 1
+        Me.lblTitulo.Text = "Listas"
         '
-        'Button1
+        'btnSimple
         '
-        Me.Button1.BackColor = System.Drawing.Color.Snow
-        Me.Button1.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Button1.ForeColor = System.Drawing.Color.Firebrick
-        Me.Button1.Location = New System.Drawing.Point(133, 181)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(154, 66)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Lista Simple"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnSimple.BackColor = System.Drawing.Color.Snow
+        Me.btnSimple.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.btnSimple.ForeColor = System.Drawing.Color.Firebrick
+        Me.btnSimple.Location = New System.Drawing.Point(133, 181)
+        Me.btnSimple.Name = "btnSimple"
+        Me.btnSimple.Size = New System.Drawing.Size(154, 66)
+        Me.btnSimple.TabIndex = 2
+        Me.btnSimple.Text = "Lista Simple"
+        Me.btnSimple.UseVisualStyleBackColor = False
         '
         'btnDoble
         '
@@ -123,9 +125,9 @@ Partial Class MenuListas
         Me.Controls.Add(Me.btnDCircular)
         Me.Controls.Add(Me.btnSCircular)
         Me.Controls.Add(Me.btnDoble)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.btnSimple)
+        Me.Controls.Add(Me.lblTitulo)
+        Me.Controls.Add(Me.lblIns)
         Me.Name = "MenuListas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Listas"
@@ -134,9 +136,9 @@ Partial Class MenuListas
 
     End Sub
 
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents lblIns As Label
+    Friend WithEvents lblTitulo As Label
+    Friend WithEvents btnSimple As Button
     Friend WithEvents btnDoble As Button
     Friend WithEvents btnSCircular As Button
     Friend WithEvents btnDCircular As Button

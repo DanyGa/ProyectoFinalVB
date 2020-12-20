@@ -37,7 +37,7 @@
     End Sub
 
     Public Sub Desencolar()
-        If head = tail Then
+        If head Is tail Then
             head = Nothing
             tail = Nothing
             Return
