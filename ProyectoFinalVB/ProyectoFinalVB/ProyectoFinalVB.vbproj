@@ -228,6 +228,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AlgoritmosdeOrdenamiento\CountingSort.resx">
+      <DependentUpon>CountingSort.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlgoritmosdeOrdenamiento\RadixSort.resx">
+      <DependentUpon>RadixSort.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlgoritmosdeOrdenamiento\ShellSort.resx">
+      <DependentUpon>ShellSort.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EstructurasdeDatos\Arboles\Arbol.resx">
       <DependentUpon>Arbol.vb</DependentUpon>
     </EmbeddedResource>
@@ -318,6 +327,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Colas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BubbleSort.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CocktailSort.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CountingSort.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RadixSort.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShellSort.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

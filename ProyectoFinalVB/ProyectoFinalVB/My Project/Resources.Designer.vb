@@ -63,9 +63,39 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property BubbleSort() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("BubbleSort", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property CocktailSort() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("CocktailSort", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Colas() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Colas", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property CountingSort() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("CountingSort", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -156,6 +186,26 @@ Namespace My.Resources
         Friend ReadOnly Property Pilas() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Pilas", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property RadixSort() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("RadixSort", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ShellSort() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ShellSort", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
