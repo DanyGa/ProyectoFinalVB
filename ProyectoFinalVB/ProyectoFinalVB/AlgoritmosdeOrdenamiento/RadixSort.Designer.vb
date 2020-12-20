@@ -29,7 +29,7 @@ Partial Class RadixSort
         Me.txtNum = New System.Windows.Forms.TextBox()
         Me.txtMin = New System.Windows.Forms.TextBox()
         Me.txtMax = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnGenerar = New System.Windows.Forms.Button()
         Me.btnOrdenar = New System.Windows.Forms.Button()
         Me.btnMenu = New System.Windows.Forms.Button()
         Me.lbNum = New System.Windows.Forms.ListBox()
@@ -122,21 +122,22 @@ Partial Class RadixSort
         Me.txtMax.Size = New System.Drawing.Size(116, 26)
         Me.txtMax.TabIndex = 6
         '
-        'Button1
+        'btnGenerar
         '
-        Me.Button1.BackColor = System.Drawing.Color.Snow
-        Me.Button1.Font = New System.Drawing.Font("Modern No. 20", 13.8!, System.Drawing.FontStyle.Bold)
-        Me.Button1.ForeColor = System.Drawing.Color.Peru
-        Me.Button1.Location = New System.Drawing.Point(66, 280)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(136, 69)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "Generar"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnGenerar.BackColor = System.Drawing.Color.Snow
+        Me.btnGenerar.Font = New System.Drawing.Font("Modern No. 20", 13.8!, System.Drawing.FontStyle.Bold)
+        Me.btnGenerar.ForeColor = System.Drawing.Color.Peru
+        Me.btnGenerar.Location = New System.Drawing.Point(66, 280)
+        Me.btnGenerar.Name = "btnGenerar"
+        Me.btnGenerar.Size = New System.Drawing.Size(136, 69)
+        Me.btnGenerar.TabIndex = 7
+        Me.btnGenerar.Text = "Generar"
+        Me.btnGenerar.UseVisualStyleBackColor = False
         '
         'btnOrdenar
         '
         Me.btnOrdenar.BackColor = System.Drawing.Color.Snow
+        Me.btnOrdenar.Enabled = False
         Me.btnOrdenar.Font = New System.Drawing.Font("Modern No. 20", 13.8!, System.Drawing.FontStyle.Bold)
         Me.btnOrdenar.ForeColor = System.Drawing.Color.Peru
         Me.btnOrdenar.Location = New System.Drawing.Point(242, 280)
@@ -264,7 +265,7 @@ Partial Class RadixSort
         Me.Controls.Add(Me.lbNum)
         Me.Controls.Add(Me.btnMenu)
         Me.Controls.Add(Me.btnOrdenar)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnGenerar)
         Me.Controls.Add(Me.txtMax)
         Me.Controls.Add(Me.txtMin)
         Me.Controls.Add(Me.txtNum)
@@ -289,7 +290,7 @@ Partial Class RadixSort
     Friend WithEvents txtNum As TextBox
     Friend WithEvents txtMin As TextBox
     Friend WithEvents txtMax As TextBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnGenerar As Button
     Friend WithEvents btnOrdenar As Button
     Friend WithEvents btnMenu As Button
     Friend WithEvents lbNum As ListBox
