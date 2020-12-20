@@ -30,8 +30,8 @@ Partial Class CountingSort
         Me.btnOrdenar = New System.Windows.Forms.Button()
         Me.btnMenu = New System.Windows.Forms.Button()
         Me.gbTiempo = New System.Windows.Forms.GroupBox()
-        Me.lblOrd = New System.Windows.Forms.Label()
         Me.lblOrdenar = New System.Windows.Forms.Label()
+        Me.lblOrd = New System.Windows.Forms.Label()
         Me.lbNum = New System.Windows.Forms.ListBox()
         Me.lbOrd = New System.Windows.Forms.ListBox()
         Me.txtNum = New System.Windows.Forms.TextBox()
@@ -137,15 +137,6 @@ Partial Class CountingSort
         Me.gbTiempo.TabIndex = 7
         Me.gbTiempo.TabStop = False
         '
-        'lblOrd
-        '
-        Me.lblOrd.AutoSize = True
-        Me.lblOrd.Location = New System.Drawing.Point(19, 37)
-        Me.lblOrd.Name = "lblOrd"
-        Me.lblOrd.Size = New System.Drawing.Size(90, 22)
-        Me.lblOrd.TabIndex = 0
-        Me.lblOrd.Text = "Ordenar:"
-        '
         'lblOrdenar
         '
         Me.lblOrdenar.AutoSize = True
@@ -154,6 +145,15 @@ Partial Class CountingSort
         Me.lblOrdenar.Size = New System.Drawing.Size(40, 22)
         Me.lblOrdenar.TabIndex = 1
         Me.lblOrdenar.Text = "0:0"
+        '
+        'lblOrd
+        '
+        Me.lblOrd.AutoSize = True
+        Me.lblOrd.Location = New System.Drawing.Point(19, 37)
+        Me.lblOrd.Name = "lblOrd"
+        Me.lblOrd.Size = New System.Drawing.Size(90, 22)
+        Me.lblOrd.TabIndex = 0
+        Me.lblOrd.Text = "Ordenar:"
         '
         'lbNum
         '

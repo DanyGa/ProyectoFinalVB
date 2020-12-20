@@ -16,6 +16,38 @@ Public Class RadixSort
     End Sub
 
     Public Sub Ordenar(ByVal n As Integer)
+        Dim aux As Integer() = New Integer(vector.Length - 1) {}
+        Dim count As Integer() = New Integer(1 << min) {}
+        Dim pref As Integer() = New Integer(1 << min) {}
+        Dim groups As Integer = CInt(Math.Ceiling(CDbl(max) / CDbl(min)))
+        Dim mask As Integer = (1 << min) - 1
+
+        Dim c As Integer = 0, shift As Integer = 0
+
+        While c < groups
+            For j As Integer = 0 To count.Length - 1
+                count(j) = 0
+            Next
+
+            For i As Integer = 0 To vector.Length - 1
+                count(vector(i) >> shift And mask) += 1
+            Next
+
+            pref(0) = 0
+
+            For i As Integer = 1 To count.Length - 1
+                pref(i) = pref(i - 1) + count(i - 1)
+            Next
+
+            For i As Integer = 0 To vector.Length - 1
+                aux(Math.Min(Threading.Interlocked.Increment(pref(vector(i) >> shift And mask)), pref(vector(i) >> shift And mask) - 1)) = vector(i)
+            Next
+
+            aux.CopyTo(vector, 0)
+            c += 1
+            shift += min
+        End While
+
 
     End Sub
 

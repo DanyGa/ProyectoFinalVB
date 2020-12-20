@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class RadixSort
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class RadixSort
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.lblNum = New System.Windows.Forms.Label()
         Me.lblMin = New System.Windows.Forms.Label()
@@ -37,10 +37,6 @@ Partial Class RadixSort
         Me.gbTiempo = New System.Windows.Forms.GroupBox()
         Me.lblOrdenar = New System.Windows.Forms.Label()
         Me.lblOrd = New System.Windows.Forms.Label()
-        Me.lblComparaciones = New System.Windows.Forms.Label()
-        Me.lblCom = New System.Windows.Forms.Label()
-        Me.lblIntercambios = New System.Windows.Forms.Label()
-        Me.lblInv = New System.Windows.Forms.Label()
         Me.gbTiempo.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -188,22 +184,18 @@ Partial Class RadixSort
         Me.gbTiempo.BackColor = System.Drawing.Color.Snow
         Me.gbTiempo.Controls.Add(Me.lblOrdenar)
         Me.gbTiempo.Controls.Add(Me.lblOrd)
-        Me.gbTiempo.Controls.Add(Me.lblComparaciones)
-        Me.gbTiempo.Controls.Add(Me.lblCom)
-        Me.gbTiempo.Controls.Add(Me.lblIntercambios)
-        Me.gbTiempo.Controls.Add(Me.lblInv)
         Me.gbTiempo.Font = New System.Drawing.Font("Britannic Bold", 12.0!)
         Me.gbTiempo.ForeColor = System.Drawing.Color.Peru
-        Me.gbTiempo.Location = New System.Drawing.Point(23, 401)
+        Me.gbTiempo.Location = New System.Drawing.Point(23, 437)
         Me.gbTiempo.Name = "gbTiempo"
-        Me.gbTiempo.Size = New System.Drawing.Size(406, 143)
+        Me.gbTiempo.Size = New System.Drawing.Size(406, 58)
         Me.gbTiempo.TabIndex = 12
         Me.gbTiempo.TabStop = False
         '
         'lblOrdenar
         '
         Me.lblOrdenar.AutoSize = True
-        Me.lblOrdenar.Location = New System.Drawing.Point(129, 110)
+        Me.lblOrdenar.Location = New System.Drawing.Point(121, 18)
         Me.lblOrdenar.Name = "lblOrdenar"
         Me.lblOrdenar.Size = New System.Drawing.Size(40, 22)
         Me.lblOrdenar.TabIndex = 5
@@ -212,47 +204,11 @@ Partial Class RadixSort
         'lblOrd
         '
         Me.lblOrd.AutoSize = True
-        Me.lblOrd.Location = New System.Drawing.Point(14, 110)
+        Me.lblOrd.Location = New System.Drawing.Point(14, 18)
         Me.lblOrd.Name = "lblOrd"
         Me.lblOrd.Size = New System.Drawing.Size(90, 22)
         Me.lblOrd.TabIndex = 4
         Me.lblOrd.Text = "Ordenar:"
-        '
-        'lblComparaciones
-        '
-        Me.lblComparaciones.AutoSize = True
-        Me.lblComparaciones.Location = New System.Drawing.Point(188, 64)
-        Me.lblComparaciones.Name = "lblComparaciones"
-        Me.lblComparaciones.Size = New System.Drawing.Size(22, 22)
-        Me.lblComparaciones.TabIndex = 3
-        Me.lblComparaciones.Text = "0"
-        '
-        'lblCom
-        '
-        Me.lblCom.AutoSize = True
-        Me.lblCom.Location = New System.Drawing.Point(14, 64)
-        Me.lblCom.Name = "lblCom"
-        Me.lblCom.Size = New System.Drawing.Size(155, 22)
-        Me.lblCom.TabIndex = 2
-        Me.lblCom.Text = "Comparaciones:"
-        '
-        'lblIntercambios
-        '
-        Me.lblIntercambios.AutoSize = True
-        Me.lblIntercambios.Location = New System.Drawing.Point(161, 18)
-        Me.lblIntercambios.Name = "lblIntercambios"
-        Me.lblIntercambios.Size = New System.Drawing.Size(22, 22)
-        Me.lblIntercambios.TabIndex = 1
-        Me.lblIntercambios.Text = "0"
-        '
-        'lblInv
-        '
-        Me.lblInv.AutoSize = True
-        Me.lblInv.Location = New System.Drawing.Point(14, 18)
-        Me.lblInv.Name = "lblInv"
-        Me.lblInv.Size = New System.Drawing.Size(133, 22)
-        Me.lblInv.TabIndex = 0
-        Me.lblInv.Text = "Intercambios:"
         '
         'RadixSort
         '
@@ -298,8 +254,4 @@ Partial Class RadixSort
     Friend WithEvents gbTiempo As GroupBox
     Friend WithEvents lblOrdenar As Label
     Friend WithEvents lblOrd As Label
-    Friend WithEvents lblComparaciones As Label
-    Friend WithEvents lblCom As Label
-    Friend WithEvents lblIntercambios As Label
-    Friend WithEvents lblInv As Label
 End Class
