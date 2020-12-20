@@ -1,7 +1,7 @@
 ﻿Imports System.IO
 Public Class ListaDoble
     Public n As NodoListas
-    Public MiLista As LS = New LS()
+    Public MiLista As LD = New LD()
 
     Private Sub btnAgregar_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
         Try

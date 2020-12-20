@@ -22,9 +22,9 @@ Partial Class ListaDobleCircular
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnAgregar = New System.Windows.Forms.Button()
+        Me.btnEliminar = New System.Windows.Forms.Button()
+        Me.btnBorrarL = New System.Windows.Forms.Button()
         Me.btnContar = New System.Windows.Forms.Button()
         Me.btnCargar = New System.Windows.Forms.Button()
         Me.btnMenu = New System.Windows.Forms.Button()
@@ -36,52 +36,54 @@ Partial Class ListaDobleCircular
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Button1
+        'btnAgregar
         '
-        Me.Button1.BackColor = System.Drawing.Color.Snow
-        Me.Button1.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Button1.ForeColor = System.Drawing.Color.YellowGreen
-        Me.Button1.Location = New System.Drawing.Point(56, 89)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(129, 58)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnAgregar.BackColor = System.Drawing.Color.Snow
+        Me.btnAgregar.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.btnAgregar.ForeColor = System.Drawing.Color.YellowGreen
+        Me.btnAgregar.Location = New System.Drawing.Point(96, 118)
+        Me.btnAgregar.Name = "btnAgregar"
+        Me.btnAgregar.Size = New System.Drawing.Size(129, 58)
+        Me.btnAgregar.TabIndex = 0
+        Me.btnAgregar.Text = "Agregar"
+        Me.btnAgregar.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btnEliminar
         '
-        Me.Button2.BackColor = System.Drawing.Color.Snow
-        Me.Button2.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Button2.ForeColor = System.Drawing.Color.YellowGreen
-        Me.Button2.Location = New System.Drawing.Point(56, 184)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(129, 58)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnEliminar.BackColor = System.Drawing.Color.Snow
+        Me.btnEliminar.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.btnEliminar.ForeColor = System.Drawing.Color.YellowGreen
+        Me.btnEliminar.Location = New System.Drawing.Point(96, 209)
+        Me.btnEliminar.Name = "btnEliminar"
+        Me.btnEliminar.Size = New System.Drawing.Size(129, 58)
+        Me.btnEliminar.TabIndex = 1
+        Me.btnEliminar.Text = "Eliminar"
+        Me.btnEliminar.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btnBorrarL
         '
-        Me.Button3.BackColor = System.Drawing.Color.Snow
-        Me.Button3.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.Button3.ForeColor = System.Drawing.Color.YellowGreen
-        Me.Button3.Location = New System.Drawing.Point(56, 279)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(129, 58)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnBorrarL.BackColor = System.Drawing.Color.Snow
+        Me.btnBorrarL.Enabled = False
+        Me.btnBorrarL.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.btnBorrarL.ForeColor = System.Drawing.Color.YellowGreen
+        Me.btnBorrarL.Location = New System.Drawing.Point(96, 300)
+        Me.btnBorrarL.Name = "btnBorrarL"
+        Me.btnBorrarL.Size = New System.Drawing.Size(129, 58)
+        Me.btnBorrarL.TabIndex = 2
+        Me.btnBorrarL.Text = "Borrar Lista"
+        Me.btnBorrarL.UseVisualStyleBackColor = False
         '
         'btnContar
         '
         Me.btnContar.BackColor = System.Drawing.Color.Snow
+        Me.btnContar.Enabled = False
         Me.btnContar.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold)
         Me.btnContar.ForeColor = System.Drawing.Color.YellowGreen
-        Me.btnContar.Location = New System.Drawing.Point(459, 89)
+        Me.btnContar.Location = New System.Drawing.Point(640, 118)
         Me.btnContar.Name = "btnContar"
         Me.btnContar.Size = New System.Drawing.Size(129, 58)
         Me.btnContar.TabIndex = 3
-        Me.btnContar.Text = "Button4"
+        Me.btnContar.Text = "Contar"
         Me.btnContar.UseVisualStyleBackColor = False
         '
         'btnCargar
@@ -169,6 +171,7 @@ Partial Class ListaDobleCircular
         'btnGuardar
         '
         Me.btnGuardar.BackColor = System.Drawing.Color.Snow
+        Me.btnGuardar.Enabled = False
         Me.btnGuardar.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold)
         Me.btnGuardar.ForeColor = System.Drawing.Color.YellowGreen
         Me.btnGuardar.Location = New System.Drawing.Point(640, 209)
@@ -193,9 +196,9 @@ Partial Class ListaDobleCircular
         Me.Controls.Add(Me.btnCargar)
         Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.btnContar)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnBorrarL)
+        Me.Controls.Add(Me.btnEliminar)
+        Me.Controls.Add(Me.btnAgregar)
         Me.Name = "ListaDobleCircular"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Lista Doble Circular"
@@ -204,9 +207,9 @@ Partial Class ListaDobleCircular
 
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btnAgregar As Button
+    Friend WithEvents btnEliminar As Button
+    Friend WithEvents btnBorrarL As Button
     Friend WithEvents btnContar As Button
     Friend WithEvents btnCargar As Button
     Friend WithEvents btnMenu As Button

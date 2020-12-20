@@ -15,10 +15,10 @@ Public Class ListaSimpleCircular
                 btnBorrarL.Enabled = True
                 btnContar.Enabled = True
                 btnGuardar.Enabled = True
+            Else
+                MessageBox.Show("El dato ya existe en la lista")
+                txtNodo.Clear()
             End If
-
-            MessageBox.Show("El dato ya existe en la lista")
-            txtNodo.Clear()
         Catch
             MessageBox.Show("Introduzca un número válido.")
         End Try
