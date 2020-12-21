@@ -26,7 +26,6 @@ Partial Class MenuAlgoritmos
         Me.lblTitulo = New System.Windows.Forms.Label()
         Me.btnBubble = New System.Windows.Forms.Button()
         Me.btnCocktail = New System.Windows.Forms.Button()
-        Me.btnInsertion = New System.Windows.Forms.Button()
         Me.btnCounting = New System.Windows.Forms.Button()
         Me.btnRadix = New System.Windows.Forms.Button()
         Me.btnShell = New System.Windows.Forms.Button()
@@ -61,7 +60,7 @@ Partial Class MenuAlgoritmos
         Me.btnBubble.BackColor = System.Drawing.Color.Snow
         Me.btnBubble.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold)
         Me.btnBubble.ForeColor = System.Drawing.Color.Crimson
-        Me.btnBubble.Location = New System.Drawing.Point(97, 171)
+        Me.btnBubble.Location = New System.Drawing.Point(56, 176)
         Me.btnBubble.Name = "btnBubble"
         Me.btnBubble.Size = New System.Drawing.Size(167, 67)
         Me.btnBubble.TabIndex = 2
@@ -73,31 +72,19 @@ Partial Class MenuAlgoritmos
         Me.btnCocktail.BackColor = System.Drawing.Color.Snow
         Me.btnCocktail.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold)
         Me.btnCocktail.ForeColor = System.Drawing.Color.Crimson
-        Me.btnCocktail.Location = New System.Drawing.Point(97, 259)
+        Me.btnCocktail.Location = New System.Drawing.Point(294, 176)
         Me.btnCocktail.Name = "btnCocktail"
         Me.btnCocktail.Size = New System.Drawing.Size(167, 67)
         Me.btnCocktail.TabIndex = 3
         Me.btnCocktail.Text = "Cocktail Sort"
         Me.btnCocktail.UseVisualStyleBackColor = False
         '
-        'btnInsertion
-        '
-        Me.btnInsertion.BackColor = System.Drawing.Color.Snow
-        Me.btnInsertion.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.btnInsertion.ForeColor = System.Drawing.Color.Crimson
-        Me.btnInsertion.Location = New System.Drawing.Point(285, 171)
-        Me.btnInsertion.Name = "btnInsertion"
-        Me.btnInsertion.Size = New System.Drawing.Size(167, 67)
-        Me.btnInsertion.TabIndex = 4
-        Me.btnInsertion.Text = "Insertion Sort"
-        Me.btnInsertion.UseVisualStyleBackColor = False
-        '
         'btnCounting
         '
         Me.btnCounting.BackColor = System.Drawing.Color.Snow
         Me.btnCounting.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold)
         Me.btnCounting.ForeColor = System.Drawing.Color.Crimson
-        Me.btnCounting.Location = New System.Drawing.Point(285, 259)
+        Me.btnCounting.Location = New System.Drawing.Point(533, 176)
         Me.btnCounting.Name = "btnCounting"
         Me.btnCounting.Size = New System.Drawing.Size(167, 67)
         Me.btnCounting.TabIndex = 5
@@ -109,7 +96,7 @@ Partial Class MenuAlgoritmos
         Me.btnRadix.BackColor = System.Drawing.Color.Snow
         Me.btnRadix.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold)
         Me.btnRadix.ForeColor = System.Drawing.Color.Crimson
-        Me.btnRadix.Location = New System.Drawing.Point(477, 171)
+        Me.btnRadix.Location = New System.Drawing.Point(162, 314)
         Me.btnRadix.Name = "btnRadix"
         Me.btnRadix.Size = New System.Drawing.Size(167, 67)
         Me.btnRadix.TabIndex = 6
@@ -121,7 +108,7 @@ Partial Class MenuAlgoritmos
         Me.btnShell.BackColor = System.Drawing.Color.Snow
         Me.btnShell.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold)
         Me.btnShell.ForeColor = System.Drawing.Color.Crimson
-        Me.btnShell.Location = New System.Drawing.Point(477, 259)
+        Me.btnShell.Location = New System.Drawing.Point(422, 314)
         Me.btnShell.Name = "btnShell"
         Me.btnShell.Size = New System.Drawing.Size(167, 67)
         Me.btnShell.TabIndex = 7
@@ -133,11 +120,10 @@ Partial Class MenuAlgoritmos
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.ProyectoFinalVB.My.Resources.Resources.MenuAlgoritmos
-        Me.ClientSize = New System.Drawing.Size(784, 404)
+        Me.ClientSize = New System.Drawing.Size(784, 485)
         Me.Controls.Add(Me.btnShell)
         Me.Controls.Add(Me.btnRadix)
         Me.Controls.Add(Me.btnCounting)
-        Me.Controls.Add(Me.btnInsertion)
         Me.Controls.Add(Me.btnCocktail)
         Me.Controls.Add(Me.btnBubble)
         Me.Controls.Add(Me.lblTitulo)
@@ -154,7 +140,6 @@ Partial Class MenuAlgoritmos
     Friend WithEvents lblTitulo As Label
     Friend WithEvents btnBubble As Button
     Friend WithEvents btnCocktail As Button
-    Friend WithEvents btnInsertion As Button
     Friend WithEvents btnCounting As Button
     Friend WithEvents btnRadix As Button
     Friend WithEvents btnShell As Button

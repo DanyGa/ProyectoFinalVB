@@ -11,7 +11,7 @@
         Hide()
     End Sub
 
-    Private Sub btnInsertion_Click(sender As Object, e As EventArgs) Handles btnInsertion.Click
+    Private Sub btnInsertion_Click(sender As Object, e As EventArgs)
         Dim sam As New InsertionSort()
         sam.Show()
         Hide()

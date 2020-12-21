@@ -94,12 +94,6 @@
     <Compile Include="AlgoritmosdeOrdenamiento\CountingSort.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AlgoritmosdeOrdenamiento\InsertionSort.Designer.vb">
-      <DependentUpon>InsertionSort.vb</DependentUpon>
-    </Compile>
-    <Compile Include="AlgoritmosdeOrdenamiento\InsertionSort.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="AlgoritmosdeOrdenamiento\RadixSort.Designer.vb">
       <DependentUpon>RadixSort.vb</DependentUpon>
     </Compile>
